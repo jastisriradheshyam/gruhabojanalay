@@ -1,0 +1,54 @@
+.one
+{
+	width:25% ; 
+	height:300px ;
+	float:left ;
+	margin-left:40px;
+}
+
+.food
+{
+	
+	width: 90% ; 
+	height:250px ; 
+	border-radius:250px;
+	margin-top:22px;
+	border:solid 2px black;
+	
+}
+.food:hover
+{
+	height:292px;
+	margin-top:2px;
+}
+.food_disp
+{
+	width:50% ; 
+	/*height:280px ;*/ 
+	float: left ;
+	background:url('../image/topback.jpg');
+	border:5px solid #0DA3FB;
+	font-weight:bold;
+	font-size:20px;
+	border-radius:10px;
+}
+
+
+.price
+{
+	background:-webkit-linear-gradient(white , grey);
+	background:linear-gradient(white , grey);
+	background:-moz-linear-gradient(white , grey);
+	margin-top:150px;
+	width:13% ; 
+	height:28px ;
+	float:left ;
+	margin-left:50px;
+	padding:10px 15px 10px 15px;
+	border-top-left-radius:30px;
+	border:solid 3px black;
+	font-family:Elephant;
+	font-weight:bold;
+	font-size:18px;
+	
+}

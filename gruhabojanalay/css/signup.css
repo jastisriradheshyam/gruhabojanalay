@@ -1,0 +1,171 @@
+html {
+	background: url('../image/congruent_pentagon.png');
+}
+#setthis{
+	position:fixed;
+	width:100%;
+	height:100px;
+	z-index:9999;
+	background: url('../image/food.png');
+	}
+body{
+	margin:0;
+	padding:0px;
+	height:100%;
+	width:100%;
+}
+	#logo{float:left;
+		width:15%;
+		height:80px;
+		background: url('../image/food.png');
+	}
+	#logoimg{
+		alt:"Gruhabojnaly";  
+		border-radius:250px;
+	}
+	#sitename{
+		float:left;
+		height:80px;
+		background: url('../image/food.png');
+		width:58% ;
+		
+		color:green;
+	}
+	#sitename>p{
+	margin:0;
+	top:0%;
+	font-size:55px;
+	}
+	#login{
+		float:left;
+		height:80px;
+		background: url('../image/food.png');
+		width:27%;
+	}
+	#sign{
+		float:left;
+		width:70%;
+		height:20%;
+		font-size:90%;
+		margin-right:5%;
+		}
+	#sign>a{
+		font-size:80%;
+	}
+	#submitf{
+		margin:0 auto;
+		width:30%;
+		
+		}
+	#submitf>input{
+		border-radius:5px;
+		color:black;
+		}
+	#submitf>input:hover{
+		background:green;
+		border-radius:10px;
+		}
+#signform{
+		
+		height:100%;
+		width:95%;
+		margin:0 auto;
+		}
+.success{
+	color:#009900;
+}
+.error{
+	color:#F33C21;
+}
+.talign_right{
+	text-align:right;
+}
+.username_avail_result{
+	display:block;
+	width:180px;
+}
+.password_strength {
+	display:block;
+	width:20%;
+	padding:3px;
+	text-align:center;
+	color:#333;
+	font-size:12px;
+	backface-visibility:#FFF;
+	font-weight:bold;
+	float:left;
+	border-radius:5px;
+}
+/* Password strength indicator classes weak, normal, strong, verystrong*/
+.password_strength.weak{
+	background:#e84c3d;
+}
+.password_strength.normal{
+	background:#f1c40f;
+}
+.password_strength.strong{
+	background:#27ae61;
+}
+.password_strength.verystrong{
+	background:#2dcc70;
+	color:#FFF;
+}
+
+
+header{
+	background: url('../image/restaurant.png');
+	/*background:#AD0F80;*/
+	height:25px;
+	margin-left:200px;
+	margin-right:200px;
+	border-radius:20px;
+}
+header>nav>a{
+	margin-left:90px;
+	color:white;
+	text-decoration:none;
+	font-size:21px;
+	font-family: "Times New Roman", Georgia, Serif;
+}
+header>nav>a:hover{
+	background:green;
+	border-radius:5px;
+	background: url('../image/food.png');
+	}
+footer{	background:#3c9ffc;
+	margin: 0 auto;
+	text-align:center;
+	border-radius:20px;
+	width: 20%;
+    	
+	}
+label{
+		width:30%;
+		float:left;
+		font-size:20px;
+		}
+input[type="text"]{
+	border-radius:10px;
+	height:17px;
+	width:40%;
+	color:green;
+	}
+input[type="password"]{
+	border-radius:10px;
+	height:17px;
+	width:40%;
+	color:green;
+	}
+#password{
+		float:left;
+		}
+#contactusb{
+	float:down;
+	padding: 30px 30px 30px 30px;
+	
+	width:60%;
+	border-radius:20px;
+	margin: 0 auto;
+	border:5px solid green;
+	background:url('../image/footer_lodyas.png');/*#a59ff4;*/
+}

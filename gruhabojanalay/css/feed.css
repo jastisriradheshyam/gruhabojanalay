@@ -1,0 +1,39 @@
+#feedform{
+		margin:0 auto;
+		}
+#feedform>label{
+			font-size:20px;
+			color:yellow;
+			}
+h1{
+	margin:0 auto;
+	width:40%;
+	color:white;
+	font-style:italic;
+	}
+#txt{
+			width:300px;
+			margin:0 auto;
+			border-radius:20px;
+			}
+#feedform>textarea{
+			border-radius:5px;
+			}
+#fsubmit{
+		width:55px;
+		border-radius:10px;
+		}
+#sub{	
+	width:55px;
+	margin:0 auto;
+		}
+#fsubmit:hover{
+		background:green;
+		}
+#feeddiv{
+		margin:0 auto;
+		width:80%;
+		}
+textarea{
+		margin-left:50px;
+		}

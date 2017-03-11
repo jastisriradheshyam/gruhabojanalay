@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>JQuery Cycle Plugin - Basic Demo</title>
+
+<style type="text/css">
+.slideshow { height: 232px; width: 232px; margin: auto }
+.slideshow img { padding: 15px; border: 1px solid #ccc; background-color: #eee; }
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	
+    $('.slideshow').cycle({
+		fx: 'uncover', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+		
+		}),
+
+	$('#Pause').hide(),
+
+	$('.slideshow').cycle({
+	timeout:10
+	}),
+
+	$('#pause').click(function() {
+		stopBlinking=false;
+		$('.slideshow').cycle('pause');
+		blink('#Pause');
+	}),
+	
+	$('#resume').click(function() {
+		$('.slideshow').cycle('resume');
+	 	stopBlinking = true;
+	
+	});
+
+	function blink(selector) {
+    		$(selector).fadeOut('slow', function() {
+        	$(this).fadeIn('slow', function() {
+            	
+			if (!stopBlinking)
+            		{
+                		blink(this);
+            		}	
+            		else
+            		{
+               			 $(this).stop();
+				$(this).hide();
+            		}
+        	});
+    		});
+	}
+});
+</script>
+</head>
+<body>
+	<div class="slideshow">
+		<img src="img1.jpg" width="200" height="200" />
+		<img src="img2.jpg" width="200" height="200" />
+		<img src="img3.jpg" width="200" height="200" />
+	</div>
+<input type=button id="pause" value="Pause">
+<input type=button id="resume" value="Resume">
+
+<div id="Pause"> <center><font color='Red'> <h4>You Ve Paused The Animation</h4></font><center> </div> 
+
+</body>
+</html>
